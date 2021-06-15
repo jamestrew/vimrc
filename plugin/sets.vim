@@ -7,10 +7,6 @@ set expandtab
 set smartindent
 set nowrap
 
-autocmd Filetype typescriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd Filetype javascriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
-filetype plugin indent on
-
 set exrc
 set number
 set relativenumber
@@ -38,5 +34,10 @@ set splitbelow
 set splitright
 
 set termguicolors
-set formatoptions-=ro
+autocmd Filetype * setlocal formatoptions-=ro
+
+
+autocmd Filetype typescriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd Filetype javascriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
+filetype plugin indent on
 
