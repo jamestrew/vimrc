@@ -38,3 +38,5 @@ set splitbelow
 set splitright
 
 set termguicolors
+set formatoptions-=ro
+
