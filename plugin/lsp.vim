@@ -13,7 +13,8 @@ nnoremap <leader>sd :lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 nnoremap <leader>gn :lua vim.lsp.diagnostic.goto_next()<CR>
 "inoremap <C-space> <C-o>:lua vim.lsp.buf.completion()<CR>
 
-inoremap <silent><expr> <C-Space> compe#complete()
+" inoremap <silent><expr> <C-Space> compe#complete()
+inoremap <silent><expr> <C-Space> :lua vim.lsp.buf.signature_help()<CR>
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
