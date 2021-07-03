@@ -1,6 +1,9 @@
 scriptencoding utf-8
 set encoding=utf-8
 
+set shell=/bin/zsh
+
+
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
@@ -25,6 +28,7 @@ set undofile
 set scrolloff=8
 set noshowmode
 set completeopt=menuone,noinsert,noselect
+set shortmess+=c
 set signcolumn=yes
 set colorcolumn=80
 set cmdheight=2

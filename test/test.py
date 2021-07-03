@@ -1,4 +1,11 @@
 def test():
+    """
+    This is a string to demonstrate
+    {wow} inside
+
+    >>> print('code')
+    'code'
+    """
     pass
 
 
@@ -22,14 +29,6 @@ import math
 
 from argparse import ONE_OR_MORE, _callable, Action
 
-
-"""
-This is a string to demonstrate
-{wow} inside
-
->>> print('code')
-'code'
-"""
 
 print(math.sqrt(5))
 
