@@ -36,6 +36,7 @@ Plug 'tpope/vim-fugitive'
 
 " Looks
 Plug 'gruvbox-community/gruvbox'
+Plug 'folke/tokyonight.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
@@ -44,13 +45,15 @@ Plug 'folke/lsp-colors.nvim'
 
 " Others
 Plug 'dbeniamine/cheat.sh-vim'
+Plug 'folke/which-key.nvim'
 
 call plug#end()
 
 lua require('theprimeagen')
 
 let mapleader = ' '
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme tokyonight
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -75,3 +78,7 @@ augroup fmt
   autocmd BufWritePre * Prettier
 augroup END
 
+
+lua << EOF
+    require("which-key").setup{}
+EOF
